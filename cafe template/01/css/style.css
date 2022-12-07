@@ -1,0 +1,244 @@
+/* global */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.active {
+  background-color: #444;
+}
+
+/* styling header navbar */
+
+header {
+  width: 100%;
+}
+
+header nav {
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+}
+
+header nav .logo {
+  float: left;
+  margin-left: 20px;
+}
+
+header nav .logo a {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 70px;
+  font-weight: bold;
+}
+
+header nav ul {
+  float: right;
+  margin-right: 20px;
+  list-style: none;
+  line-height: 70px;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* styling header description */
+
+header section {
+  width: 100%;
+  /* height: 557px; */
+  height: calc(100vh - 70px);
+  background-color: #aaa;
+  background-image: url(../images/cafe1.jpg);
+  background-size: 100% 557px;
+  position: relative;
+}
+
+header section .desc-container {
+  position: absolute;
+  top: 15%;
+  left: 22.5%;
+  width: 55%;
+  text-align: center;
+}
+
+header section .desc-container h1 {
+  color: #fff;
+  font-size: 70px;
+}
+
+header section .desc-container hr {
+  width: 20%;
+  margin: 15px auto;
+  border: 5px solid #000;
+}
+
+header section .desc-container p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 38px;
+  margin-bottom: 15px;
+}
+
+header section .desc-container button {
+  background-color: #fff;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  border-radius: 40px;
+  transition: background 1s, color 1s;
+}
+
+header section .desc-container button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* styling main of page  */
+
+main {
+  width: 100%;
+}
+
+main .art-container {
+  width: 80%;
+  margin: 20px auto 80px auto;
+  overflow: hidden;
+}
+
+/* styling left article */
+
+main .art-container .left {
+  width: 50%;
+  float: left;
+  text-align: center;
+  padding: 20px;
+}
+
+main .art-container .left .fa-mug-saucer {
+  color: #000;
+  font-size: 40px;
+}
+
+main .art-container .left h1 {
+  margin: 10px 0 20px 0;
+}
+
+main .art-container .left p {
+  line-height: 25px;
+}
+
+/* styling right article  */
+
+main .art-container .right {
+  width: 50%;
+  float: right;
+  text-align: center;
+  padding: 20px;
+}
+
+main .art-container .right .fa-clock {
+  font-size: 40px;
+  color: #000;
+}
+
+main .art-container .right h1 {
+  margin: 10px 0 20px 0;
+}
+
+main .art-container .right p {
+  line-height: 25px;
+}
+
+/* styling section of image */
+
+main .img {
+  width: 100%;
+  height: 500px;
+  background-image: url("../images/cafe2.jpg");
+  background-size: 80%;
+  background-size: 100%;
+  background-position: center -810px;
+}
+
+/* styling section of reservation */
+
+main .reserv {
+  width: 80%;
+  text-align: center;
+  margin: 80px auto;
+}
+
+main .reserv h1 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+main .reserv p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+main .reserv button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  outline: 0;
+  background-color: #222;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background 1s, color 1s;
+}
+
+main .reserv button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #ccc;
+}
+
+/* styling footer */
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #222;
+  text-align: center;
+}
+
+footer span {
+  color: #fff;
+  line-height: 70px;
+}
+
+/* ========================================== */
+
+/* title nous-trouver and title-contact  */
+
+.title-nous-trouver,
+.title-contact {
+  background-color: #eee;
+  width: fit-content;
+  padding: 50px;
+  margin: 130px auto;
+  font-size: 60px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  box-shadow: 5px 10px 30px 10px #ccc;
+}
