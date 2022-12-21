@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 4000px;
+}
+
+/* start header */
+
+header {
+  display: flex;
+  padding: 20px 100px;
+  /* position: fixed; */
+  top: 0;
+  background-color: #ffc017;
+  border-bottom: 1px solid #333;
+  z-index: 100;
+}
+
+header .logo {
+  flex: 1;
+}
+
+header .logo .fa-medium {
+  font-size: 35px;
+}
+
+header .logo a {
+  color: #000;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  padding-top: 7px;
+}
+
+header ul li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+header ul li button {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: #222;
+  color: #fff;
+}
+
+header ul li button:hover {
+  background-color: #000;
+}
+
+/* end header */
+
+/* start description */
+
+.desc {
+  height: 70vh;
+  background-color: #ffc017;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+}
+
+.desc .title-para-btn {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.desc .title-para-btn h1 {
+  font-size: 100px;
+}
+
+.desc .title-para-btn p {
+  font-size: 28px;
+  width: 70%;
+  margin: 40px 0;
+}
+
+.desc .title-para-btn button {
+  padding: 10px 50px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.desc .title-para-btn button:hover {
+  background-color: #000;
+}
+
+.desc .image {
+  width: 50%;
+}
+
+.desc .image img {
+  width: 100%;
+}
+
+/* end description */
+
+/* start trending */
+.trending {
+  padding: 40px 0;
+  border-bottom: 1px solid #bbb;
+  background-color: #fff;
+  /* border : 1px solid #f00; */
+}
+
+.trending .fa-arrow-trend-up {
+  margin-left: 100px;
+  color: #555;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.trending h4 {
+  display: inline-block;
+  margin-left: 10px;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.trending .items {
+  margin: 0 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.trending .item {
+  counter-increment: my-counter;
+  padding-left: 55px;
+  position: relative;
+  width: 31%;
+  margin-bottom: 40px;
+}
+
+.trending .item::before {
+  content: "0" counter(my-counter);
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.2);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.trending .item .fa-mug-hot {
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.trending .item a {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+.trending .item .sbold {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.trending .item .fa-star {
+  color: #ffc017;
+}
+/* end trending */
+
+/* start main */
+
+main {
+  padding: 0 100px;
+  margin: 50px 0;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+main .left-side {
+  width: 55%;
+  float : left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .left-side .des {
+  width: 70%;
+  margin-bottom: 60px;
+}
+
+main .left-side .des .fa-monero {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+main .left-side .des a {
+  color: #555;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 30px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+main .left-side .des a span {
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+main .left-side .image {
+  width: 30%;
+}
+
+main .left-side .image img {
+  width: 100%;
+}
+
+.right-side {
+  text-align: center;
+  width: 45%;
+  /* height: 300px; */
+  float : right;
+  padding : 0 60px;
+  position : sticky;
+  top : 20px;
+  right : 0;
+}
+
+.right-side h4 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 75px;
+}
+
+.right-side .link-services {
+  text-align: left;
+  padding-left: 70px;
+}
+
+.right-side a {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #444;
+  border: 1px solid #bbb;
+}
+
+.right-side .link-services a {
+  border: none;
+  padding: 0 7px;
+}
+
+.right-side hr {
+  margin: 15px 0;
+}
+/* end main */
